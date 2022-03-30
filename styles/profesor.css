@@ -1,0 +1,27 @@
+header,footer
+{
+    background-color: #9FC131;
+}
+
+body
+{
+    background-color: #F4EEA9;
+}
+
+.logoH
+{
+    height: 60px;
+    width: 60px;
+}
+
+.logo,.logoR
+{
+    height: 80px;
+    width: 80px;
+}
+
+
+.logoR
+{
+    transform: scaleX(-1);
+}
