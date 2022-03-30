@@ -1,30 +1,74 @@
-@import url(styles/alumno.css);
-@import url(styles/profesor.css);
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+    @import url(styles/alumno.css);
+    @import url(styles/profesor.css);
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
-body { 
-    background: url(img/EsVedra.jpeg) no-repeat center center fixed; 
+    body {
+    background: url(img/EsVedra.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     }
 
-.logoHada{
+    .logoHada {
     width: 20%;
     margin-bottom: -2%;
     margin-left: 10%;
-}
+    }
 
-.eslogan{
-    color: #9FC131;
+    .eslogan {
+    color: #9fc131;
     font-size: medium;
     margin-left: 3%;
-}
+    }
 
-.nombre{
-    font-family: 'Josefin Sans', sans-serif;
-    color: #005C53;
+    .nombre {
+    font-family: "Josefin Sans", sans-serif;
+    color: #005c53;
     margin-left: 13%;
-}
+    }
 
+    .ingreso {
+    margin-left: 40%;
+    margin-top: 15%;
+    }
+    .email {
+    border: solid 4px #005c53;
+    background-color: #d6d58e;
+    height: 40px;
+    padding: 5%;
+    }
+
+    .entrar {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #d6d58e;
+    border: 5px solid #005c53;
+    border-radius: 0.6em;
+    color: black;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    }
+    .entrar:hover,
+    .btn:focus {
+    color: #005c53;
+    outline: 0;
+    }
