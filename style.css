@@ -1,0 +1,30 @@
+@import url(styles/alumno.css);
+@import url(styles/profesor.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+body { 
+    background: url(img/EsVedra.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+.logoHada{
+    width: 20%;
+    margin-bottom: -2%;
+    margin-left: 10%;
+}
+
+.eslogan{
+    color: #9FC131;
+    font-size: medium;
+    margin-left: 3%;
+}
+
+.nombre{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #005C53;
+    margin-left: 13%;
+}
+
