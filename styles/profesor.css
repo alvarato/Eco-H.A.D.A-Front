@@ -1,11 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
 header,footer
 {
     background-color: #9FC131;
 }
 
+.nombre
+{
+    font-family: "Josefin Sans", sans-serif;
+    color:#005C53;
+}
+
 body
 {
     background-color: #F4EEA9;
+}
+
+.logoHada
+{
+    height: 80px;
+    width: 100px;
 }
 
 .logoH
@@ -24,4 +38,47 @@ body
 .logoR
 {
     transform: scaleX(-1);
+}
+
+.head
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+}
+
+.grups
+{
+    padding: 12px 26px;
+    font-size: 20px;
+    background-color: #D6D58E;
+    border: 3px solid #064635;
+}
+
+.grups:active
+{
+    padding: 7px 30px;
+    font-size: 20px;
+    background-color: #064635;
+    color:#ffffff;
+    border: 3px solid #064635;
+}
+
+.div1
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    /*padding: 20px 10px 10px 10px;*/
 }
