@@ -2,6 +2,10 @@
     @import url(styles/profesor.css);
     @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
+a{
+    text-decoration: none !important;
+}
+
     body {
     background: url(img/EsVedra.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;

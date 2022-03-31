@@ -13,67 +13,86 @@
 </head>
 
 <body>
-    <header></header>
-    <main>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container-fluid justify-content-around">
+                <h3>Hola {alumno}</h3>
+                <img src="/img/logo.PNG" alt="logo">
+                <a class="navbar-brand" href="/vistasAlumno/principalAlumno.html">
+                    <span class="iconify" data-icon="ant-design:home-outlined" data-width="60"></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
         <section class="d-flex flex-row">
-        <div class="col-6 m-3">
-            <section class="d-flex flex-column">
-                <h3 class="d-flex justify-content-center">Aquesta es la nostra llar</h3>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/img/conejo.jpg" class="d-block w-100" alt="conill">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/img/paisaje1.jpg" class="d-block w-100" alt="paisatge">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/img/pajaro.jpg" class="d-block w-100" alt="ocell">
+            <div class="col-6">
+                <section class="d-flex flex-column">
+                    <div class="d-flex justify-content-center">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide w-75 mt-4" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/conejo.jpg" class="d-block w-100" alt="conill">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/paisaje1.jpg" class="d-block w-100" alt="paisatge">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/pajaro.jpg" class="d-block w-100" alt="ocell">
+                                </div>
+                            </div>
+                            <h5 class="d-flex justify-content-center">Aquesta es la nostra llar</h5>
                         </div>
                     </div>
+                </section>
+                <section class="m-4">
+                    <div class="d-flex f-row align-items-center m-2">
+                        <span class="iconify" data-icon="ph:butterfly" data-width="80"></span>
+                        <h3>Accedir al repte actual</h3>
+                    </div>
+                    <div class="d-flex f-row align-items-center m-2">
+                        <span class="iconify" data-icon="fluent:animal-rabbit-24-regular" data-width="80"></span>
+                        <h3>Reptes voluntaris</h3>
+                    </div>
+                    <div class="d-flex f-row align-items-center m-2">
+                        <span class="iconify" data-icon="mdi:cow" data-width="80"></span>
+                        <h3>Reptes complets</h3>
+                    </div>
+                </section>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-row align-items-center dodo">
+                    <img src="https://i.ibb.co/mRcKHgR/Medalla-Oro-Dodo.png" alt="Medalla-Oro-Dodo" border="0">
+                    <div class="d-flex flex-column">
+                        <h3>Propera categoria disponible</h3>
+                        <h4>Aconseguix X punts més</h2>
+                    </div>
                 </div>
-            </section>
-            <section class="m-5">
-                <div class="d-flex f-row align-items-center m-4">
-                    <span class="iconify" data-icon="ph:butterfly" data-width="80"></span>
-                    <h3>Accedir al repte actual</h3>
-                </div>
-                <div class="d-flex f-row align-items-center m-4">
-                    <span class="iconify" data-icon="fluent:animal-rabbit-24-regular" data-width="80"></span>
-                    <h3>Reptes voluntaris</h3>
-                </div>
-                <div class="d-flex f-row align-items-center m-4">
-                <span class="iconify" data-icon="mdi:cow" data-width="80"></span>
-                <h3>Reptes complets</h3>
-                </div>
-            </section>
-        </div>
-        <div class="col-6">
-            <div class="d-flex flex-row align-items-center dodo">
-                <img src="/img/MedallaOroDodo.png" alt="Medalla Oro Dodo">
-                <div class="d-flex flex-column">
-                    <h3>Propera categoria disponible</h3>
-                    <h4>Aconseguix X punts més</h2>
+                <div class="personal">
+                    <div class="d-flex f-row align-items-center m-2">
+                        <span class="iconify" data-icon="emojione-monotone:elephant" data-width="80"></span>
+                        <h3>Tens X punts actualment</h3>
+                    </div>
+                    <div class="d-flex f-row align-items-center m-2">
+                        <span class="iconify" data-icon="fluent:animal-cat-16-regular" data-width="80"></span>
+                        <h3>El repte actual et donara X punts</h3>
+                    </div>
+                    <div class="d-flex f-row align-items-center">
+                        <span class="iconify" data-icon="fluent:key-16-regular" data-width="80"></span>
+                        <h3>Canvia la contrasenya</h3>
+                    </div>
                 </div>
             </div>
-            <div class="personal">
-            <div class="d-flex f-row align-items-center m-4">
-                <span class="iconify" data-icon="emojione-monotone:elephant" data-width="80"></span>
-                <h3>Tens X punts actualment</h3>
-            </div>
-            <div class="d-flex f-row align-items-center m-4">
-                <span class="iconify" data-icon="fluent:animal-cat-16-regular" data-width="80"></span>
-                <h3>El repte actual et donara X punts</h3>
-            </div>
-            <div class="d-flex f-row align-items-center m-4">
-                <span class="iconify" data-icon="fluent:key-16-regular" data-width="80"></span>
-                <h3>Canvia la contrasenya</h3>
-            </div>
-        </div>
-        </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <nav class="navbar">
+            <div class="container-fluid justify-content-around">
+                <h3>Cuidem de la nostra llar.</h3>
+                <h3>Recorda't d'apagar els llums.</h3>
+            </div>
+        </nav>
+    </footer>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

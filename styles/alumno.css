@@ -1,10 +1,31 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+.main{
     background-color: #F5F2CD;
 }
 
+.header{
+    background-color: #9FC131;
+}
 .dodo{
-    margin-top: 25%;
+    margin-top: 15%;
 }
 .personal{
-    margin-top: 28%;
+    margin-top: 18%;
+}
+
+.nombre {
+    font-family: "Josefin Sans", sans-serif;
+    color: #005c53;
+    }
+
+.logo{
+    width: 10%;
+}
+
+.footer{
+    background-color: #9FC131;
 }
