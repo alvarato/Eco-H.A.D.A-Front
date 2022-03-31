@@ -1,14 +1,20 @@
+:root{
+    --fondomain-- : #F5F2CD ;
+    --fondoheader-- :#9FC131;
+    --letras--: #005c53;
+    --fondotablas-- : #D6D58E;
+}
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 a{
     text-decoration: none !important;
     color: black !important;
 }
 .main{
-    background-color: #F5F2CD;
+    background-color: var(--fondomain--);
 }
 
 .header{
-    background-color: #9FC131;
+    background-color: var(--fondoheader--);
 }
 .dodo{
     margin-top: 15%;
@@ -19,13 +25,19 @@ a{
 
 .nombre {
     font-family: "Josefin Sans", sans-serif;
-    color: #005c53;
+    color: var(--letras--);
     }
 
-.logo{
-    width: 10%;
+.footer{
+    background-color: var(--fondoheader--);
 }
 
-.footer{
-    background-color: #9FC131;
+.nomReto{
+    background-color: var(--fondoheader--);
+    border: solid 5px var(--letras--);
+}
+
+.descripcion{
+    border: solid 3px var(--letras--);
+    background-color: var(--fondotablas--);
 }
