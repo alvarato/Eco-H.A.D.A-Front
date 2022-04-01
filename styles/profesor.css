@@ -5,10 +5,16 @@ header,footer
     background-color: #9FC131;
 }
 
-.nombre
+footer
 {
-    font-family: "Josefin Sans", sans-serif;
-    color:#005C53;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none !important;
+    color: black !important;
 }
 
 body
@@ -21,29 +27,11 @@ body
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    vertical-align: text-top;
 }
 
-.logoHada
-{
-    height: 80px;
-    width: 100px;
-}
-
-.logoH
-{
-    height: 60px;
-    width: 60px;
-}
-
-.logo,.logoR
-{
-    height: 80px;
-    width: 80px;
-}
-
-.logo
-{
-    padding: 0px 7px 0px 0px;
+.logo{
+    width: 10%;
 }
 
 .logoR
@@ -51,69 +39,33 @@ body
     transform: scaleX(-1);
 }
 
-.head
-{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.foot
-{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 20px 10px 10px 10px;
-}
-
 .grups
 {
-    padding: 1% 15% 1% 15%;
+    padding: 5% 30% 5% 30%;
     font-size: 20px;
     background-color: #D6D58E;
     border: 3px solid #064635;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .grups:active
 {
-    padding: 1% 15% 1% 15%;
+    padding: 5% 30% 5% 30%;
     font-size: 20px;
     background-color: #064635;
     color:#ffffff;
     border: 3px solid #064635;
+    margin-top: 5%;
 }
 
 .div1
 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 60%;
+    margin-top: 15%;
+    margin-left: 10%;
 }
 
 .div2
 {
-    height: 100%;
-    width: 40%;
-    align-items: center;
-}
-
-.divGrupo
-{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-
-.divBotones
-{
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column wrap;
-    align-items: center;
+    margin-top: 7%;
+    margin-right: 10%;
 }
