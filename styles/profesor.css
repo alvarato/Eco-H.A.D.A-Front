@@ -12,22 +12,14 @@ footer
     width: 100%;
 }
 
-a{
-    text-decoration: none !important;
-    color: black !important;
-}
-
 body
 {
     background-color: #F4EEA9;
 }
 
-.newBody
-{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    vertical-align: text-top;
+a{
+    text-decoration: none !important;
+    color: black !important;
 }
 
 .logo{
@@ -37,6 +29,14 @@ body
 .logoR
 {
     transform: scaleX(-1);
+}
+
+.newBody
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    vertical-align: text-top;
 }
 
 .grups
