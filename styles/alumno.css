@@ -82,3 +82,13 @@ a{
     background-color: var(--fondoheader--);
     margin-left: 10px;
 }
+
+/* vista retos hechos */
+.retoHecho{
+    border: solid 5px var(--letras--);
+    background-color: var(--fondotablas--);
+}
+
+.imgreto{
+    border-left: solid 5px var(--letras--);
+}
