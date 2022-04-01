@@ -2,6 +2,12 @@
     @import url(styles/profesor.css);
     @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
+    :root{
+        --fondomain-- : #F5F2CD ;
+        --fondoheader-- :#9FC131;
+        --letras--: #005c53;
+        --fondotablas-- : #D6D58E;
+    }
 a{
     text-decoration: none !important;
 }
@@ -21,14 +27,14 @@ a{
     }
 
     .eslogan {
-    color: #9fc131;
+    color: var(--fondoheader--);
     font-size: medium;
     margin-left: 3%;
     }
 
     .nombre {
     font-family: "Josefin Sans", sans-serif;
-    color: #005c53;
+    color: var(--letras--);
     margin-left: 13%;
     }
 
@@ -37,8 +43,8 @@ a{
     margin-top: 15%;
     }
     .email {
-    border: solid 4px #005c53;
-    background-color: #d6d58e;
+    border: solid 4px --letras--;
+    background-color: var(--fondomain--);
     height: 40px;
     padding: 5%;
     }
@@ -48,8 +54,8 @@ a{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: #d6d58e;
-    border: 5px solid #005c53;
+    background-color: var(--fondomain--);
+    border: 5px solid --letras--;
     border-radius: 0.6em;
     color: black;
     cursor: pointer;
@@ -73,6 +79,6 @@ a{
     }
     .entrar:hover,
     .btn:focus {
-    color: #005c53;
+    color: var(--letras--);
     outline: 0;
     }
