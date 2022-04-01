@@ -30,6 +30,9 @@ a{
 
 .footer{
     background-color: var(--fondoheader--);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
 
 .nomReto{
@@ -40,4 +43,29 @@ a{
 .descripcion{
     border: solid 3px var(--letras--);
     background-color: var(--fondotablas--);
+}
+
+.valorInsignia{
+    border-left: solid 5px var(--letras--);
+}
+
+.insignia{
+    border-bottom: solid 5px var(--letras--);
+}
+
+.docEntregar{
+    border: solid 5px var(--letras--);
+    background-color: var(--fondotablas--);
+    display: flex;
+    justify-content: center;
+    margin-top: 60%;
+    margin-bottom: 10%;
+}
+
+.btnEntrega{
+    border: solid 5px var(--letras--);
+    background-color: var(--fondotablas--);
+    margin-left: 30%;
+    width: 40%;
+    color: var(--letras--);
 }
