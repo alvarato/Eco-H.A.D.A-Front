@@ -1,24 +1,25 @@
-let entrar;
-let entrar2 = document.getElementsByID("entrar2");
+let entrar = document.getElementById("entrar");
 let id = 1;
 
-entrar2.addEventListener("keydown", ()=>{
+entrar.addEventListener("click", ()=> {
     acceder();
-});
+})
+
+
 
 function acceder(){
-    entrar = document.getElementById("email").value;
-    entrar2 = entrar2.value;
-    if(api(entrar && entrar2)) {
-        return "El usuario existe";
-    }
-    let a = entrar.substring(0,6);
+    usuario = document.getElementById("usuario").value;
+    // contrasenya = document.getElementById("contrasenya").value;
+    // if(api(entrar && entrar2)) {
+    //     return "El usuario existe";
+    // }
+    let a = usuario.substring(0,6);
     console.log(a);
     if("alumno" == a){
         console.log("get alumno")
-        window.location.href = 'vistasAlumno/principalAlumno'
+        window.location.href = 'vistasAlumno/principalAlumno.html'
     }else{
         console.log("get profesor")
-        window.location.href = 'vistasProfe/principalProfe'
+        window.location.href = 'vistasProfe/principalProfe.html'
     }
 }
