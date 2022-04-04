@@ -5,10 +5,17 @@ header,footer
     background-color: #9FC131;
 }
 
-.nombre
+footer
 {
-    font-family: "Josefin Sans", sans-serif;
-    color:#005C53;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+a
+{
+    text-decoration: none !important;
+    color: black !important;
 }
 
 body
@@ -16,69 +23,29 @@ body
     background-color: #F4EEA9;
 }
 
-.logoHada
-{
-    height: 80px;
-    width: 100px;
-}
-
-.logoH
-{
-    height: 60px;
-    width: 60px;
-}
-
-.logo,.logoR
-{
-    height: 80px;
-    width: 80px;
-}
-
-
 .logoR
 {
     transform: scaleX(-1);
 }
 
-.head
+.div1
 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.foot
-{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 10px 10px 10px;
+    margin-left: 30%;
 }
 
 .grups
 {
-    padding: 12px 26px;
+    padding: 5% 20% 5% 20%;
     font-size: 20px;
-    background-color: #D6D58E;
+    background-color: #9FC131;
     border: 3px solid #064635;
 }
 
 .grups:active
 {
-    padding: 7px 30px;
+    padding: 5% 20% 5% 20%;
     font-size: 20px;
     background-color: #064635;
     color:#ffffff;
     border: 3px solid #064635;
-}
-
-.div1
-{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    /*padding: 20px 10px 10px 10px;*/
 }
