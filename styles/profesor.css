@@ -12,18 +12,15 @@ footer
     width: 100%;
 }
 
-body
+a
 {
-    background-color: #F4EEA9;
-}
-
-a{
     text-decoration: none !important;
     color: black !important;
 }
 
-.logo{
-    width: 10%;
+body
+{
+    background-color: #F4EEA9;
 }
 
 .logoR
@@ -31,12 +28,9 @@ a{
     transform: scaleX(-1);
 }
 
-.newBody
+.div1
 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    vertical-align: text-top;
+    margin-left: 30%;
 }
 
 .grups
