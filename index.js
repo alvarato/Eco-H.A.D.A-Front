@@ -19,7 +19,7 @@ async function acceder (){
                 r = response;});
             if(r > 0){
             sessionStorage.setItem("id", r);
-            window.location.href='vistasAlumno\principalAlumno.html';
+            window.location.assign("http://127.0.0.1:5500/hada/Eco-H.A.D.A-Front/vistasAlumno/principalAlumno.html");
             }
             
 
