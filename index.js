@@ -1,24 +1,41 @@
-let entrar;
-let entrar2 = document.getElementsByID("entrar2");
+let email;
+let entrar2;
 let id = 1;
 
-entrar2.addEventListener("keydown", ()=>{
-    acceder();
-});
-
-function acceder(){
-    entrar = document.getElementById("email").value;
-    entrar2 = entrar2.value;
-    if(api(entrar && entrar2)) {
-        return "El usuario existe";
-    }
-    let a = entrar.substring(0,6);
-    console.log(a);
+async function acceder (){
+    email = document.getElementById("email").value;
+    entrar2 = document.getElementById("entrar2").value;
+    let a = email.substring(0,6);
+    let r;
     if("alumno" == a){
-        console.log("get alumno")
-        window.location.href = 'vistasAlumno/principalAlumno'
-    }else{
-        console.log("get profesor")
-        window.location.href = 'vistasProfe/principalProfe'
-    }
+        await fetch(`http://localhost:8080/alumno/iniciarSesion?email=${email}&&password=${entrar2}`, {
+            method: 'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            }
+            }).then(res => res.json())
+            .catch(error => console.error('Error:', error))
+            .then( response => { 
+                r = response;});
+            if(r > 0){
+            sessionStorage.setItem("id", r);
+            window.location.href='vistasAlumno\principalAlumno.html';
+            }
+            
+
+        }else{
+            await fetch(`http://localhost:8080/profesor/iniciarSesion?email=${email}&&password=${entrar2}`, {
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                }
+                }).then(res => res.json())
+                .catch(error => console.error('Error:', error))
+                .then( response => { 
+                    r = response;});
+                if(r > 0){
+                sessionStorage.setItem("id", r);
+                window.location.href='vistasAlumno\principalAlumno.html';
+                }
+        }
 }
