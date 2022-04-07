@@ -14,7 +14,7 @@
     <header class="head">
         <nav class="navbar">
             <div class="container-fluid justify-content-around">
-                <h3>Hola {profesor}</h3>
+                <h3 id="nProfe">Hola </h3>
                 <img src="../img/logo.PNG" alt="logo">
                 <a class="navbar-brand" href="/vistasAlumno/principalAlumno.html">
                     <span class="iconify" data-icon="ant-design:home-outlined" data-width="60"></span>
@@ -66,6 +66,26 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
-
+    <script>
+        let profe;
+        let cursos;
+        document.addEventListener("DOMContentLoaded", async function () {
+        let id = sessionStorage.getItem("id");
+        await fetch(`http://localhost:8080/profesor/find${id}`)
+        .then(res => res.json())
+        .catch(error => console.error('Error:', error))
+        .then(response => {
+        profe= response});
+        console.log(profe);
+        document.getElementById('nProfe').innerHTML += " " + profe.name;
+        sessionStorage.setItem("profe", profe);
+        await fetch(`http://localhost:8080/curso/profesor${id}`)
+        .then(res => res.json())
+        .catch(error => console.error('Error:', error))
+        .then(response => {
+        cursos= response});
+        console.log(cursos);
+});
+    </script>
 </body>
 </html>
